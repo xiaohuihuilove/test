@@ -15,5 +15,6 @@ jobs:
       run: kubectl get pods -a
         echo Add other actions to build,
         echo test, and deploy your project.
+    - uses: steebchen/kubectl@v1.0.0
     - name: Kubernetes CLI - kubectl
-      uses: steebchen/kubectl@v1.0.0
+      run:  kubectl get pods 
